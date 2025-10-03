@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>5th Document</title>
+    <style>
+      .auto-carousel {
+        overflow: hidden; /* hide overflow for clean edges */
+        width: 100%;
+      }
+
+      .auto-slider {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .auto-slide {
+        flex: 0 0 calc(16.666% - 1rem); /* 6 items per row by default */
+        max-width: calc(16.666% - 1rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .auto-slide img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* below 1200px → show 4 logos */
+      @media (max-width: 1200px) {
+        .auto-slide {
+          flex: 0 0 calc(25% - 1rem);
+          max-width: calc(25% - 1rem);
+        }
+      }
+
+      /* below 786px → show 3 logos */
+      @media (max-width: 786px) {
+        .auto-slide {
+          flex: 0 0 calc(33.333% - 1rem);
+          max-width: calc(33.333% - 1rem);
+        }
+      }
+
+      /* below 425px → show 2 logos */
+      @media (max-width: 425px) {
+        .auto-slide {
+          flex: 0 0 calc(50% - 1rem);
+          max-width: calc(50% - 1rem);
+        }
+      }
+        /* below 425px → show 2 logos */
+        @media (max-width: 350px) {
+        .auto-slide {
+          flex: 0 0 calc(100% - 1rem);
+          max-width: calc(100% - 1rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h1 class="span font-family fw-bold">Who uses Frispes?</h1>
+          <p class="text-secondary private-space">
+            Big brands, small bussiness, new startuo and inividuals
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 auto-carousel">
+          <div class="auto-slider d-flex">
+            <div class="auto-slide s1">
+              <img src="images/Logo (7).svg" alt="" />
+            </div>
+            <div class="auto-slide s2">
+              <img src="images/Logo (12).svg" alt="" />
+            </div>
+            <div class="auto-slide s3">
+              <img src="images/Logo (13).svg" alt="" />
+            </div>
+            <div class="auto-slide s4">
+              <img src="images/Logo (9).svg" alt="" />
+            </div>
+            <div class="auto-slide s5">
+              <img src="images/Logo (10).svg" alt="" />
+            </div>
+            <div class="auto-slide s5">
+              <img src="images/Logo (11).svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

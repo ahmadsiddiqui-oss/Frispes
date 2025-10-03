@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container mt-4 justify-content-center">
+        <div class="col-3">
+          <h4 class="navbar-brand fs-4" href="#">Frispes</h4>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="col-6 collapse navbar-collapse" id="navbarNav">
+          <div class="">
+            <ul class="navbar-nav mx-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Workspace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3 d-flex align-items-center gap-3 ms-5">
+            <a href="#" class="login-link text-decoration-none">Log In</a>
+            <a href="#" class="btn btn-signup">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col text-center text-lg-start">
+          <h5>
+            Introducing
+            <img src="images/Rectangle 1 (5).svg" alt="" />
+          </h5>
+          <h1 class="header-text pt-2 font-family text-danger fw-bold">
+            Revolutionary
+            <span class="span"
+              >co-working space to realize your innovation</span
+            >
+          </h1>
+        </div>
+        <div class="coltext-center text-lg-start pt-5 px-4">
+          <p class="text-secondary fs-5">
+            In frispes, we spearhead new initiatives and provide mentorship to a
+            new startup, and help grow their opportunities in key local,
+            regional and global markets
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="justify-content-lg-end justify-content-center d-flex space-carousel">
+        <div class="background px-5 pt-5 pb-4 space-dropdown">
+          <h2 class="mb-4 font-family fw-bold text-light">
+            Find your space now
+          </h2>
+          <div class="input-with-dropdown">
+              <form action="/action_page.php" class="">
+                <label for="location" class="text-secondary input-with-dropdown ps-2 ms-1 pt-2"
+                >location</label
+              >
+                <select name="cars" id="cars" class="w-100 pt-2 pb-3 input-with-dropdown border-0 text-light px-3">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </form>
+            </div>
+            <div class="input-with-dropdown my-3">
+              <form action="/action_page.php" class="">
+                <label for="location" class="text-secondary input-with-dropdown ps-2 ms-1 pt-2"
+                >Type</label
+              >
+                <select name="cars" id="cars" class="w-100 pt-2 pb-3 input-with-dropdown border-0 text-light px-3">
+                  <option value="type">Private Office</option>
+                  <option value="type">Custom Office</option>
+                  <option value="type">Rental Office</option>
+                  <option value="type">Local Office</option>
+                </select>
+              </form>
+            </div>
+            <div class="input-with-dropdown">
+              <form action="/action_page.php" class="">
+                <label for="location" class="text-secondary input-with-dropdown ps-2 ms-1 pt-2"
+                >Date</label
+              >
+                <select name="cars" id="cars" class="w-100 pt-2 pb-3 input-with-dropdown border-0 text-light px-3">
+                  <option value=date">9 Aug 2020</option>
+                  <option value=date">10 Aug 2020</option>
+                  <option value=date">11 Aug 2020</option>
+                  <option value=date">12 Aug 2020</option>
+                </select>
+              </form>
+            </div>
+          <button class="text-light button-Space w-100 mt-3 py-3 fw-bold">
+            FIND MY SPACE
+          </button>
+        </div>
+        <div class="carousel-image px-0">
+          <div class="carousel-contain">
+            <div class="carousel-slide" id="carouselSlide">
+              <img src="images/image 10.svg" alt="Image 1" />
+              <img src="images/image 10.svg" alt="Image 2" />
+              <img src="images/image 10.svg" alt="Image 3" />
+              <img src="images/image 10.svg" alt="Image 4" />
+            </div>
+          </div>
+          <div class="indicators" id="indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+            <span class="indicator" onclick="goToSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-evenly my-5">
+        <div class="col-lg-3 col-6">
+          <h1 class="font-family span text-lg-end text-center ms-2">Our Spaces</h1>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 px-0">
+          <p class="fw-light text-secondary">
+            Our space is designed to give you a different experience when
+            working with your team or personally
+          </p>
+        </div>
+        <div class="me-lg-4 text-center text-lg-end">
+          <button id="prev-Btn" class="border-0 bg-white prevBtnClass">
+            <img src="images/arr-sil-left.svg" alt="prev" class="img-fluid arrow-img" />
+          </button>
+          <button id="next-Btn" class="border-0 bg-white nextBtnClass">
+            <img
+              src="images/arr-sil-right.png"
+              alt="Next"
+              class="img-fluid arrow-img"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row justify-content-center gap-5 carousel-wrapper d-flex">
+        <div class="carousel-slide  d-block px-0 carousel-hover">
+          <div class="position-relative">
+            <img src="images/image 5 (1).svg" alt="" class="img-fluid" />
+            <div class="position-absolute bottom-0 start-0">
+              <button class="py-3 px-4 button-Space text-light d-flex">
+                <span class="button-text">Check avaibility</span>
+                <span>               
+                   <i class="bi bi-chevron-right"> </i>            
+                </span>
+              </button>
+            </div>
+          </div>
+          <h5 class="my-3 text-center">Working with team</h5>
+        </div>
+        <div class="carousel-slide carousel-hover d-block px-0 active">
+          <div class="position-relative ">
+            <img
+              src="images/Rectangle 11 (3).svg"
+              alt=""
+              class="background-image-width img-fluid"
+            />
+            <div class="position-absolute top-0 end-0 p-2">
+              <img src="images/Mask Group (7).svg" alt="" />
+            </div>
+            <div
+              class="position-absolute text-position text-light text-center px-4"
+            >
+              <h2 class="font-family">Private Space</h2>
+              <p class="private-space">
+                Comfortable space, Full speed wifi, Free coffe & Snack and many
+                more
+              </p>
+            </div>
+            <div class="position-absolute bottom-0 start-0">
+              <button class="py-3 px-4 button-Space text-light d-flex">
+                <span class="button-text">Check avaibility</span>
+                <span>               
+                   <i class="bi bi-chevron-right"> </i>            
+                </span>
+              </button>
+            </div>
+          </div>
+          <h5 class="my-3 text-center">Private Space</h5>
+        </div>
+        <div class="carousel-slide d-block px-0 carousel-hover">
+          <div class="position-relative">
+            <img
+              src="images/Rectangle 11 (2).svg"
+              alt=""
+              class="img-fluid w-100"
+            />
+            <div class="position-absolute bottom-0 start-0">
+              <button class="py-3 px-4 button-Space text-light d-flex">
+                <span class="button-text">Check avaibility</span>
+                <span>               
+                   <i class="bi bi-chevron-right"> </i>            
+                </span>           
+              </button>
+            </div>
+          </div>
+          <h5 class="my-3 text-center">Custom Office</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-5 justify-content-center gap-4">
+        <div class="col-lg-2 col-md-4 col-12 mt-4">
+          <div class="d-flex">
+            <img
+              src="images/meeting-room 1 (1).svg"
+              alt=""
+              class="align-self-start"
+            />
+            <div class="ms-3">
+              <h2 class="fw-light span font-family">500+</h2>
+              <p class="text-secondary fw-light">Meeting rooms</p>
+            </div>
+          </div>
+          <div class="d-flex my-5">
+            <img src="images/Flag (1).svg" alt="" class="align-self-start" />
+            <div class="ms-3">
+              <h2 class="fw-light span font-family">60+</h2>
+              <p class="text-secondary fw-light">Countries</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img
+              src="images/User 24px (2).svg"
+              alt=""
+              class="align-self-start"
+            />
+            <div class="ms-3">
+              <h2 class="fw-light span font-family">5K+</h2>
+              <p class="text-secondary fw-light">Startup mentors</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-12 mx-2 mt-4">
+          <div class="d-flex">
+            <img
+              src="images/circus 1 (1).svg"
+              alt=""
+              class="align-self-start"
+            />
+            <div class="ms-3">
+              <h2 class="fw-light span font-family">100+</h2>
+              <p class="text-secondary fw-light">Event spaces</p>
+            </div>
+          </div>
+          <div class="d-flex my-5">
+            <img src="images/wifi 1 (1).svg" alt="" class="align-self-start" />
+            <div class="ms-3">
+              <h2 class="fw-light span font-family">500 Mbps</h2>
+              <p class="text-secondary fw-light">Internet speed</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img
+              src="images/User 24px (3).svg"
+              alt=""
+              class="align-self-start"
+            />
+            <div class="ms-3">
+              <h2 class="fw-light span font-family">200+</h2>
+              <p class="text-secondary fw-light">Communities inside</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-8 col-12 background text-light text-lg-start text-center py-lg-5 py-4 px-lg-5 px-4 ms-lg-1">
+          <h5>
+            Why Frispes
+            <img src="images/Rectangle 1 (6).svg" alt="" />
+          </h5>
+          <h1 class="font-family">We revolutionize your workspace</h1>
+          <h5 class="pe-1 lh-base fw-light">
+            With a decade of insights and expertise, we're decided to reimagine
+            co-working space, designed to help a new startup grow up and realize
+            their ideas so they can give a positive impacts on many people
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="container carousel-container my-5 justify-content-center">
+      <div class="row justify-content-center justify-content-lg-start">
+        <div class="col-lg-5 col-md-8 col-12 ms-lg-5 ps-lg-5 text-lg-start text-center">
+          <h5>Our Facilities
+            <img src="images/Rectangle 1 (5).svg" alt="">
+          </h5>
+          <h1 class="font-family span fw-bold">All facilities are designed to meet all your needs</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center py-lg-5 py-md-4">
+         <div class="col-lg-4 col-md-8 col-12 d-flex justify-content-lg-start justify-content-center">
+          <div class="indicators1" id="indicate">
+            <span class="indicate active" onclick="goToSlide(0)"></span>
+            <span class="indicate" onclick="goToSlide(1)"></span>
+            <span class="indicate" onclick="goToSlide(2)"></span>
+            <span class="indicate" onclick="goToSlide(3)"></span>
+            <div class="rotate-indicate">
+              <span id="current-slide">01</span> /
+              <span id="total-slides">04</span> 
+            </div>
+          </div>
+          <div class="carousel-left">
+            <ul class="carousel-text">
+              <li data-index="0" class="active">Spacious parking area</li>
+              <li data-index="1">Comfortable spaces</li>
+              <li data-index="2">Cozy cafe</li>
+              <li data-index="3">Child playground</li>
+            </ul>
+          </div>
+         </div>
+          <div class="col-lg-6 col-md-9 col-12 carousel-right text-lg-end text-center">
+            <img
+              id="carousel-image"
+              src="images/Rectangle 17.svg"
+              alt="slide"
+              class="image-height"
+            />
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="carousel-last-contain">
+          <div class="carousel-last-text text-center">
+            <h5>Frispes gallery
+              <img src="images/Rectangle 1 (5).svg" alt="">
+            </h5>
+            <h1 class="span font-family">Immersive beautiful<br> co-working space gallery</h1>
+            <div class="carousel-last-buttons">
+              <button id="prevLastBtn" class="border-0 bg-white">
+                <img src="images/arr-sil-left.svg" alt="" />
+              </button>
+              <button id="nextLastBtn" class="border-0 bg-white">
+                <img src="images/arr-sil-right.png" alt="" class="arr-img"/> 
+              </button>
+            </div>
+          </div>
+          <div class="carousel-last-wrapper" id="carouselLastWrapper">
+            <div class="carousel-last-slide">
+              <img src="images/image 1.svg" alt="Image 1" class="img-fluid"/>
+            </div>
+            <div class="carousel-last-slide">
+              <img src="images/image 2 (1).svg" alt="Image 2" class="img-fluid"/>
+            </div>
+            <div class="carousel-last-slide">
+              <img src="images/image 3.svg" alt="Image 3" class="img-fluid"/>
+            </div>
+            <div class="carousel-last-slide">
+              <img src="images/image 4.svg" alt="Image 4" class="img-fluid"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h1 class="span font-family fw-bold">Who uses Frispes?</h1>
+          <p class="text-secondary private-space">Big brands, small bussiness, new startuo and inividuals</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 carousel" id="carousel">
+          <div class="track" id="track">
+            <div class="slide s1">
+                <img src="images/Logo (7).svg" alt="">
+            </div>
+            <div class="slide s2">
+                <img src="images/Logo (12).svg" alt="">
+            </div>
+            <div class="slide s3">
+                <img src="images/Logo (13).svg" alt="">
+            </div>
+            <div class="slide s4">
+                <img src="images/Logo (9).svg" alt="">
+            </div>
+            <div class="slide s5">
+                <img src="images/Logo (10).svg" alt="">
+            </div>
+            <div class="slide s5">
+                <img src="images/Logo (11).svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row my-5 justify-content-evenly">
+        <div class="col-lg-4 col-12 text-center text-lg-start px-3 mb-3 mb-lg-0">
+          <h5>
+            Reviews
+            <img src="images/Rectangle 1 (5).svg" alt="" />
+          </h5>
+          <h1 class="font-family fw-bold span">
+            What our customers are saying
+          </h1>
+        </div>
+        <div class="col-lg-3 col-12 ms-lg-3 ps-lg-3 text-center text-lg-start">
+          <button id="prev-reviews" class="border-0 bg-white">
+            <img
+              src="images/arr-sil-left.svg"
+              alt="prev"
+              class="img-fluid arrow-img"
+            />
+          </button>
+          <button id="next-reviews" class="border-0 bg-white">
+            <img
+              src="images/arr-sil-right.png"
+              alt="Next"
+              class="img-fluid arrow-img"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row gap-4 carousel-wrapper-reviews">
+        <div
+          class="col card carousel-slide footer-section text-light px-4 py-5 card-section justify-content-between"
+        >
+          <p class="fw-light px-2">
+            Our team has been working at frispes for almost 2 months because our
+            office still closed. During working at frispes, we feel a new
+            experience, we can feel working with a beautiful, modern, and
+            comfortable space. And cozy cafe with high-speed internet in there.
+            Thank you for frispes and team.
+          </p>
+          <div class="d-flex">
+            <img src="images/Ellipse 1 (6).svg" alt="user" class="profile" />
+            <div class="ps-3 mt-4">
+              <p class="private-space m-0 fw-bold">Pedro Ibanez</p>
+              <p class="fw-light">UI Designer at Google</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col card carousel-slide footer-section text-light px-4 py-5 card-section justify-content-between active"
+        >
+          <p class="fw-light px-3">
+            The high-speed internet at frispes was so amazing. I can get best
+            experience when running video call with my clients. Frispes has
+            spacious and safe parking area, that’s what i need because i used to
+            work as freelancer for a long time.
+          </p>
+          <div class="mt-5 d-flex">
+            <img src="images/Ellipse 1 (7).svg" alt="user" class="profile" />
+            <div class="ps-3 mt-4">
+              <p class="private-space m-0 fw-bold">Raymond Thual</p>
+              <p class="fw-light">Professional Freelancer</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col card carousel-slide footer-section text-light px-4 py-5 card-section justify-content-between"
+        >
+          <p class="fw-light px-2">Just three words : Frispes is Awesome!</p>
+          <div class="mt-5 d-flex">
+            <img src="images/Ellipse 1 (8).svg" alt="user" class="profile" />
+            <div class="ps-3 mt-4">
+              <p class="private-space m-0 fw-bold">Yuli Berlian</p>
+              <p class="fw-light">IOS Dev at Tokopedia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-5 text-center my-5">
+          <h1 class="span font-family text-center fw-bold">Find the answers to anything you need in our Help Center</h1>
+        </div>
+      </div>
+      <div class="row gap-4 justify-content-center">
+        <div class="col-3 p-5 shadow-lg text-center position-relative column-background-change">
+          <h3 class="fw-lighter font-family ">How do I know if a space is available?</h3>
+          <button class="py-2 px-4 button-background-change">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </button>
+        </div>
+        <div class="col-3 p-5 shadow-lg text-center position-relative column-background-change"> 
+          <h3 class="fw-lighter font-family">How do i book a space?</h3>
+          <button class="py-2 px-4 button-background-change">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </button>
+        </div>
+        <div class="col-3 p-5 shadow-lg text-center position-relative column-background-change"> 
+          <h3 class="fw-lighter font-family">How do reviews work?</h3>
+          <button class="button-background-change py-2 px-4">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </button>
+        </div>
+        <div class="text-center my-5">
+          <a href="" class="text-danger text-decoration-none">More question 
+            <i class="bi bi-chevron-right fs-5 ms-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-container pt-4">
+      <div class="container">
+        <div class="row justify-content-evenly my-5">
+          <div class="col-7">
+            <h1>News, events and insights for you</h1>
+          </div>
+          <div
+            class="col-2 me-5 d-flex text-danger justify-content-end align-items-center"
+          >
+          <div class="text-center">
+            <a href="" class="text-danger text-decoration-none">See more 
+              <i class="bi bi-chevron-right fs-5 ms-4"></i>
+            </a>
+          </div>
+             </div>
+        </div>
+        <div class="row gap-4 justify-content-center">
+          <div class="col-6 d-flex px-0 column-width">
+            <img
+              src="images/Rectangle 38 (2).svg"
+              alt=""
+              class="img-fluid ceo-image"
+            />
+            <div class="py-4 px-4 bg-white shadow-lg">
+              <h2 class="font-family fw-bold">Google I / O 2020 news update</h2>
+              <p class="text-secondary">
+                Out of concern for the health and safety of our developers,
+                employees, and local communities — and in line with recent ...
+              </p>
+              <div class="d-flex mt-5">
+                <div>
+                  <img
+                    src="images/Ellipse 2 (3).svg"
+                    alt=""
+                    class="img-fluid w-100"
+                  />
+                </div>
+                <div class="ms-3">
+                  <p class="fw-bold m-0">Sundar pichai</p>
+                  <p class="fw-light text-secondary">CEO at Google</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 bg-white px-0">
+            <img
+              src="images/Rectangle 39 (8).svg"
+              alt=""
+              class="img-fluid w-100"
+            />
+            <div class="p-3">
+              <h4 class="font-family">Minimal workspace for inspirations</h4>
+              <p class="text-secondary m-0 fw-light">Anthony Masional</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center gap-4 mt-4">
+          <div class="col-3 bg-white px-0">
+            <img
+              src="images/Rectangle 39 (9).svg"
+              alt=""
+              class="img-fluid w-100"
+            />
+            <div class="p-3">
+              <h4 class="font-family">
+                Does productivity increase when working remotely ?
+              </h4>
+              <p class="text-secondary m-0 fw-light">Franck Martin</p>
+            </div>
+          </div>
+          <div class="col-3 bg-white px-0">
+            <img
+              src="images/Rectangle 39 (10).svg"
+              alt=""
+              class="img-fluid w-100"
+            />
+            <div class="p-3">
+              <h4 class="font-family">Morning routine to boost your mood</h4>
+              <p class="text-secondary m-0 fw-light">Elizabeth swan</p>
+            </div>
+          </div>
+          <div class="col-3 bg-white px-0">
+            <img
+              src="images/Rectangle 39 (11).svg"
+              alt=""
+              class="img-fluid footer-image-1"
+            />
+            <div class="p-3">
+              <h4 class="font-family">
+                5+ tips to find comfortable co-working space
+              </h4>
+              <p class="text-secondary m-0 fw-light">Mykola Ilschenko</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-section">
+      <div class="container">
+        <div class="row pt-5 justify-content-evenly">
+          <div class="col-5 text-light p-5 align-self-end">
+            <h5>
+              Became a member
+              <img src="images/Rectangle 1 (6).svg" alt="" />
+            </h5>
+            <h1 class="font-family fw-bold">
+              Ready to try different work experience now?
+            </h1>
+            <h5 class="footer-grey-text lh-base">
+              Get the best working experience that you never feel before
+            </h5>
+            <button class="footer-button text-light border-0 py-3 mt-4">
+              SIGN UP NOW
+            </button>
+          </div>
+          <div class="col-4 footer-background">
+            <div class="text-center">
+              <img
+                src="images/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004 1 (1).svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid input-with-dropdown">
+      <div class="container">
+        <div class="row py-5 justify-content-center gap-4">
+          <div class="col-3 px-4 py-3 lh-base">
+            <h1 class="header-text font-family fw-bold text-light">Frispes</h1>
+            <p class="footer-grey-text fw-light">
+              We offer comfortable spaces, cozy cafe, high-speed internet,
+              spacious parking area and many more for your best workspaces and
+              meetings
+            </p>
+            <div class="d-flex">
+              <img
+                src="images/Instagram (filled) (1).svg"
+                alt=""
+                class="img-fluid"
+              />
+              <img src="images/YouTube (1).svg" alt="" class="img-fluid px-3" />
+              <img src="images/Facebook (1).svg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-2 text-light mt-3">
+            <h5 class="text-secondary py-4">Spaces</h5>
+            <ul class="ul-bullets p-0 lh-lg">
+              <li>Co-working spaces</li>
+              <li>Meeting rooms</li>
+              <li>Event spaces</li>
+              <li>Child playground</li>
+              <li>Cafe & resto</li>
+            </ul>
+          </div>
+          <div class="col-1 text-light mt-3">
+            <h5 class="text-secondary py-4">Company</h5>
+            <ul class="ul-bullets p-0 lh-lg">
+              <li>About Us</li>
+              <li>Pricing</li>
+              <li>Careers</li>
+              <li>Press</li>
+            </ul>
+          </div>
+          <div class="col-1 text-light mt-3">
+            <h5 class="text-secondary py-4">Support</h5>
+            <ul class="ul-bullets p-0 lh-lg">
+              <li>FAQs</li>
+              <li>Privacy Policy</li>
+              <li>Help</li>
+            </ul>
+          </div>
+          <div class="col-2 text-light p-0 mt-3">
+            <h5 class="text-secondary py-4">Contact Us</h5>
+            <ul class="ul-bullets p-0 lh-lg">
+              <li>E. Hello@frispes.com</li>
+              <li>A. Jalan Jayakatwang No.301 Ngasem, Kediri</li>
+              <li>P. (+62) 82334670000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

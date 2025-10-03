@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>4th Document</title>
+    <style>
+      :root {
+        --gap: 16px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      /* header area - keep simple and avoid absolute offsets that break layout */
+      .frispes-text {
+        position: absolute;
+        right: 120px;
+        top: -41px;
+      }
+
+      /* core carousel container */
+      .frispes-carousel {
+        display: flex !important; /* override other frameworks like bootstrap */
+        gap: var(--gap);
+        align-items: end; /* match your original look */
+        overflow: hidden; /* hide the extra items */
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: nowrap; /* keep items in a single row so extras are clipped */
+      }
+
+      /* each image card: default = 4 visible items */
+      .frispes-carousel .frispes-image {
+        /* flex: 0 0 calc((100% - 3 * var(--gap)) / 4);
+      max-width: calc((100% - 3 * var(--gap)) / 4); */
+        min-width: auto; /* prevents overflowing due to large images */
+        display: block;
+        height: fit-content;
+      }
+
+      .frispes-carousel .frispes-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px; /* optional */
+      }
+
+      /* below 1200px -> show 3 images */
+      @media (max-width: 1200px) {
+        /* .frispes-carousel .frispes-image {
+          flex: 0 0 calc((100% - 2 * var(--gap)) / 3);
+          max-width: calc((100% - 2 * var(--gap)) / 3);
+        } */
+        .frispes-text {
+        position: static;
+        right: 120px;
+        top: -41px;
+      }
+      }
+
+      /* below 786px -> show 2 images */
+      @media (max-width: 786px) {
+        .frispes-carousel .frispes-image {
+          flex: 0 0 calc((100% - 1 * var(--gap)) / 2);
+          max-width: calc((100% - 1 * var(--gap)) / 2);
+        }
+      }
+
+      /* below 425px -> show 1 image full width */
+      @media (max-width: 425px) {
+        .frispes-carousel {
+          align-items: center;
+        }
+        .frispes-carousel .frispes-image {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+
+      /*       
+      /* simple styles for prev/next buttons in the header */
+      /* #prevLastBtn, #nextLastBtn{
+      border: 0; background: white; width: 44px; height: 44px; border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,.12);
+      }
+      #nextLastBtn .arr-img{ transform: rotate(180deg); } */
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="frispes-text">
+        <div class="text-center my-5">
+          <h5>
+            Frispes gallery
+            <img src="images/Rectangle 1 (5).svg" alt="" />
+          </h5>
+          <h1 class="span font-family">
+            Immersive beautiful<br />
+            co-working space gallery
+          </h1>
+          <div class="">
+            <button id="prevLastBtn" class="border-0 bg-white">
+              <img src="images/arr-sil-left.svg" alt="" />
+            </button>
+            <button id="nextLastBtn" class="border-0 bg-white">
+              <img src="images/arr-sil-left.svg" alt="" class="arr-img" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="frispes-carousel d-flex align-items-end"
+        id="carousel-frispes"
+      >
+        <div class="frispes-image">
+          <img src="images/image 1.svg" alt="Image 1" class="img-fluid" />
+        </div>
+        <div class="frispes-image">
+          <img src="images/image 2 (1).svg" alt="Image 2" class="img-fluid" />
+        </div>
+        <div class="frispes-image">
+          <img src="images/image 3.svg" alt="Image 3" class="img-fluid" />
+        </div>
+        <div class="frispes-image">
+          <img src="images/image 4.svg" alt="Image 4" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
